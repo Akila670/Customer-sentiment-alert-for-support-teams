@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Sentiment Alert</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Customer Sentiment Alert</h1>
+
+    <form id="messageForm">
+      <textarea id="customerMessage" placeholder="Enter customer message..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Customer Messages</h2>
+    <div id="messagesList"></div>
+  </div>
+
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
