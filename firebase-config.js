@@ -1,12 +1,14 @@
 // firebase-config.js
+
+// Firebase config using environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyBHEfcraIkU0TLitxXeALrnKeTD-QhEwpQ",
-  authDomain: "customer-sentiment-alert.firebaseapp.com",
-  projectId: "customer-sentiment-alert",
-  storageBucket: "customer-sentiment-alert.firebasestorage.app",
-  messagingSenderId: "399931789889",
-  appId: "1:399931789889:web:854e1809fb8e22d80becc0",
-  measurementId: "G-8P4497G6G1"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
